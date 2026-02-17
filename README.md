@@ -36,7 +36,7 @@ All communication uses JSON commands.
 
 ---
 
-### Auth / Авторизация
+## Auth / Авторизация
 
 ```json
 {
@@ -46,7 +46,7 @@ All communication uses JSON commands.
   }
 }
 ```
-###Message / Сообщение
+## Message / Сообщение
 
 ```json
 {
@@ -58,7 +58,7 @@ All communication uses JSON commands.
 }
 ```
 
-###Ping
+## Ping
 ```json
 {
   "type": "ping"
@@ -70,12 +70,12 @@ All communication uses JSON commands.
 | WS             | /ws         | WebSocket connection / WebSocket соединение |
 
 
-Connection / Подключение
+## Connection / Подключение
 ```bash
 ws://localhost:8080/ws?client_id=YOUR_ID
 ```
 
-Example Usage / Пример использования
+## Example Usage / Пример использования
 
 Example JS client:
 ```bash
@@ -101,7 +101,7 @@ ws.onopen = () => {
   }));
 };
 ```
-Architecture / Архитектура
+## Architecture / Архитектура
 
 Client Manager
 Dispatcher Queue
@@ -113,7 +113,7 @@ Command Handlers
 Offline-хранилище
 Обработчики команд
 
-Future Improvements / Возможные улучшения
+## Future Improvements / Возможные улучшения
 
 JWT authentication
 Redis offline storage
